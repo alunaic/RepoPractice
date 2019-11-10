@@ -1611,6 +1611,9 @@ GameObject:
   - component: {fileID: 201815069}
   - component: {fileID: 201815068}
   - component: {fileID: 201815067}
+  - component: {fileID: 201815073}
+  - component: {fileID: 201815072}
+  - component: {fileID: 201815071}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1691,13 +1694,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &201815071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201815066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ad4e23c8abe31408bc4da04217bd14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  force: 20
+  isSmall: 0
+--- !u!114 &201815072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201815066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbed8dd259331a4797cbb1ad96a4647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coll: {fileID: 1704598134}
+--- !u!54 &201815073
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201815066}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &458319646
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-6680
+  m_Name: pb_Mesh13570
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1867,6 +1914,8 @@ GameObject:
   - component: {fileID: 554559245}
   - component: {fileID: 554559244}
   - component: {fileID: 554559243}
+  - component: {fileID: 554559248}
+  - component: {fileID: 554559247}
   m_Layer: 0
   m_Name: Brick1 (3)
   m_TagString: Untagged
@@ -1882,7 +1931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554559241}
   m_LocalRotation: {x: -0.027754862, y: 0.17614342, z: -0.15651475, w: -0.9714455}
-  m_LocalPosition: {x: 0.95084584, y: -0.551874, z: -4.8013654}
+  m_LocalPosition: {x: 0.84, y: -0.59, z: -4.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1586344396}
@@ -3333,13 +3382,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554559241}
   m_Mesh: {fileID: 1550188827}
+--- !u!114 &554559247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554559241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873780d3cd015734c95083b02d78ad78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y_speed: 1
+--- !u!54 &554559248
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554559241}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &663521038
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13540
+  m_Name: pb_Mesh13592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5072,7 +5150,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13562
+  m_Name: pb_Mesh13620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5305,13 +5383,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.042174537, y: 0.34919903, z: 0.01573486, w: 0.93596673}
+  m_LocalPosition: {x: -6.26, y: -0.15, z: -6.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -5.16, y: 40.92, z: 0}
 --- !u!1 &1199130575
 GameObject:
   m_ObjectHideFlags: 0
@@ -5325,6 +5403,8 @@ GameObject:
   - component: {fileID: 1199130578}
   - component: {fileID: 1199130577}
   - component: {fileID: 1199130576}
+  - component: {fileID: 1199130582}
+  - component: {fileID: 1199130581}
   m_Layer: 0
   m_Name: Brick1
   m_TagString: Untagged
@@ -6791,13 +6871,42 @@ Transform:
   m_Father: {fileID: 1586344396}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 141.893, y: 2.5589905, z: -11.195007}
+--- !u!114 &1199130581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199130575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873780d3cd015734c95083b02d78ad78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y_speed: 0.7
+--- !u!54 &1199130582
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199130575}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &1550188827
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-6880
+  m_Name: pb_Mesh13550
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6963,6 +7072,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1586344396}
+  - component: {fileID: 1586344398}
+  - component: {fileID: 1586344397}
   m_Layer: 0
   m_Name: BrickPrefab
   m_TagString: Untagged
@@ -6978,7 +7089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586344395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1904342, y: 1.4398899, z: 10.915415}
+  m_LocalPosition: {x: -2.1904342, y: 1.33, z: 7.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 151781970}
@@ -6989,6 +7100,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1586344397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586344395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873780d3cd015734c95083b02d78ad78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  y_speed: 0.25
+--- !u!54 &1586344398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586344395}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1598466471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7004,10 +7144,10 @@ GameObject:
   m_Layer: 0
   m_Name: CenterSphere
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1598466472
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7094,6 +7234,8 @@ GameObject:
   - component: {fileID: 1704598136}
   - component: {fileID: 1704598135}
   - component: {fileID: 1704598134}
+  - component: {fileID: 1704598140}
+  - component: {fileID: 1704598139}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8560,13 +8702,44 @@ Transform:
   m_Father: {fileID: 1586344396}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 78.125, y: 153.58601, z: 162.09901}
+--- !u!54 &1704598139
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704598133}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1704598140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704598133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75e02f45a2f3254c93e4e922cbfbbd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torque: 5
+  turn: 2
+  rb: {fileID: 1704598139}
 --- !u!43 &1883155897
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-6682
+  m_Name: pb_Mesh13526
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

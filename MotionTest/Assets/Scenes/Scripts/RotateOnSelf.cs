@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class RotateOnSelf : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float torque; // declare rotation amount
+    public float turn;
+    public Rigidbody rb; 
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        //float turn = Input.GetAxis("Horizontal"); //rotate on input, needs further research
+        rb.AddRelativeTorque(Vector3.up * torque * turn);
     }
 }
