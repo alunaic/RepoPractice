@@ -13,7 +13,7 @@ public class ToggleGravity : MonoBehaviour
         coll.isTrigger = true;
     }
 
-    // Disables gravity on all rigidbodies entering this collider.
+    // disables gravity on all rigidbodies entering this collider.
     void OnTriggerEnter(Collider other)
     {
         if (other.attachedRigidbody)
