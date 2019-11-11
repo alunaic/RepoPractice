@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControllerWSAD : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     Rigidbody rb; //declare a reference for the rigidbody
 
